@@ -1,0 +1,1279 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Julián Cabrera González · Desarrollador</title>
+<meta name="description" content="Portfolio de Julián Cabrera González, estudiante de Ingeniería Informática (Sistemas de Información) en la Universidad de Cádiz y la Sapienza Università di Roma." />
+<link rel="canonical" href="https://juliaan66.github.io/" />
+<meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0e1113" media="(prefers-color-scheme: dark)" />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://juliaan66.github.io/" />
+<meta property="og:title" content="Julián Cabrera González · Desarrollador" />
+<meta property="og:description" content="Ingeniería Informática · Sistemas de Información. Aplicaciones completas, de la base de datos a la pantalla: GAZMULA, Facturador Xignux, Calendario Local y WasaText." />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locale:alternate" content="en_GB" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EJC%3C/text%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Julián Cabrera González","jobTitle":"Desarrollador de software","url":"https://juliaan66.github.io/","email":"mailto:julitrebu81@gmail.com","alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad de Cádiz"},{"@type":"CollegeOrUniversity","name":"Sapienza Università di Roma"}],"knowsLanguage":["es","en"],"sameAs":["https://github.com/juliaan66","https://www.linkedin.com/in/juli%C3%A1n-cabrera-gonz%C3%A1lez-92837b415/"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f3ee;
+  --surface: #ffffff;
+  --surface-2: #eeebe3;
+  --ink: #15181d;
+  --muted: #5a606b;
+  --line: #dad6cb;
+  --accent: #0f766e;
+  --accent-ink: #ffffff;
+  --accent-soft: #d6ece8;
+  --warn: #b45309;
+  --warn-soft: #fbeedd;
+  --ok: #15803d;
+  --ok-soft: #dcf1e2;
+  --bad: #b91c1c;
+  --bad-soft: #f8e0e0;
+  --edge: #c9c4b8;
+  --shadow: 0 1px 2px rgba(20, 20, 20, .04), 0 8px 24px rgba(20, 20, 20, .06);
+  --radius: 14px;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1113;
+    --surface: #151a1d;
+    --surface-2: #1c2327;
+    --ink: #e8ebe7;
+    --muted: #9aa3a7;
+    --line: #283035;
+    --accent: #2dd4bf;
+    --accent-ink: #062320;
+    --accent-soft: #12332f;
+    --warn: #f59e0b;
+    --warn-soft: #33260f;
+    --ok: #4ade80;
+    --ok-soft: #12301c;
+    --bad: #f87171;
+    --bad-soft: #3a1717;
+    --edge: #33403f;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1113;
+  --surface: #151a1d;
+  --surface-2: #1c2327;
+  --ink: #e8ebe7;
+  --muted: #9aa3a7;
+  --line: #283035;
+  --accent: #2dd4bf;
+  --accent-ink: #062320;
+  --accent-soft: #12332f;
+  --warn: #f59e0b;
+  --warn-soft: #33260f;
+  --ok: #4ade80;
+  --ok-soft: #12301c;
+  --bad: #f87171;
+  --bad-soft: #3a1717;
+  --edge: #33403f;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 720px) { .wrap { padding: 0 32px; } }
+.mono { font-family: var(--font-mono); }
+
+/* Header */
+header.top {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.top .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 17px; text-decoration: none; white-space: nowrap; }
+.brand span { color: var(--accent); }
+nav.links { display: none; gap: 22px; margin-left: auto; }
+nav.links a { text-decoration: none; color: var(--muted); font-size: 14px; }
+nav.links a:hover { color: var(--ink); }
+@media (min-width: 860px) { nav.links { display: flex; } }
+.mnav { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 0 16px 10px; margin-top: -4px; }
+.mnav::-webkit-scrollbar { display: none; }
+.mnav a { flex: none; text-decoration: none; font-size: 13.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; background: var(--surface); }
+@media (min-width: 860px) { .mnav { display: none; } }
+@media (max-width: 859px) { html { scroll-padding-top: 112px; } }
+.top-actions { display: flex; gap: 8px; margin-left: auto; }
+@media (min-width: 860px) { .top-actions { margin-left: 8px; } }
+.pill-btn {
+  border: 1px solid var(--line); background: var(--surface); border-radius: 999px;
+  padding: 6px 12px; font-size: 13px; font-weight: 500; line-height: 1;
+  display: inline-flex; align-items: center; gap: 6px; min-height: 32px;
+}
+.pill-btn:hover { border-color: var(--muted); }
+.pill-btn svg { width: 15px; height: 15px; }
+
+/* Hero */
+.hero { padding: 64px 0 32px; }
+.kicker { font-family: var(--font-mono); font-size: 13px; color: var(--accent); letter-spacing: .02em; margin: 0 0 18px; }
+.hero h1 {
+  font-family: var(--font-display); font-weight: 700; letter-spacing: -0.03em;
+  font-size: clamp(40px, 7vw, 76px); line-height: 1.02; margin: 0 0 22px; max-width: 17ch;
+}
+.hero .lead { font-size: clamp(17px, 2vw, 19px); color: var(--muted); max-width: 62ch; margin: 0; }
+.hero .lead strong { color: var(--ink); font-weight: 600; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; font-weight: 600; font-size: 15px; transition: border-color .15s, background .15s; }
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.primary:hover { background: color-mix(in srgb, var(--accent) 86%, var(--ink)); }
+.btn.icon { width: 44px; padding: 0; }
+.btn svg { width: 18px; height: 18px; }
+.status-line { display: flex; align-items: center; gap: 8px; margin-top: 24px; font-size: 14px; color: var(--muted); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px var(--ok-soft); flex: none; }
+
+/* Graph */
+.graph-card {
+  margin-top: 40px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 18px 14px 20px; box-shadow: var(--shadow);
+}
+@media (min-width: 720px) { .graph-card { padding: 22px 26px 26px; } }
+.graph-hint { font-size: 13px; color: var(--muted); margin: 0 0 14px; }
+/* Project summary */
+.psum { list-style: none; margin: 0; padding: 0; }
+.psum li + li { border-top: 1px solid var(--line); }
+.prow { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "dot name go" ". line line" ". badge badge"; column-gap: 12px; row-gap: 4px; align-items: center; width: 100%; text-align: left; border: 0; background: transparent; padding: 14px 6px; border-radius: 10px; transition: background .15s; }
+.prow:hover { background: var(--surface-2); }
+.prow .pdot { grid-area: dot; width: 10px; height: 10px; }
+.prow .pname { grid-area: name; font-weight: 600; font-size: 16px; }
+.prow .pline { grid-area: line; color: var(--muted); font-size: 14.5px; line-height: 1.45; }
+.prow .badge { grid-area: badge; justify-self: start; margin-top: 4px; }
+.prow .go { grid-area: go; color: var(--muted); transition: transform .15s, color .15s; }
+.prow:hover .go { transform: translateX(3px); color: var(--ink); }
+@media (min-width: 720px) {
+  .prow { grid-template-columns: auto minmax(160px, 220px) minmax(0, 1fr) auto auto; grid-template-areas: "dot name line badge go"; column-gap: 16px; padding: 14px 10px; }
+  .prow .badge { margin-top: 0; }
+}
+
+/* Sections */
+section.block { padding: 72px 0 8px; }
+.sec-head { margin-bottom: 28px; }
+.sec-head h2 { font-family: var(--font-display); font-size: clamp(30px, 4.4vw, 44px); letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 10px; }
+.sec-head p { margin: 0; color: var(--muted); max-width: 64ch; }
+
+/* About */
+.about-grid { display: grid; gap: 28px; }
+@media (min-width: 900px) { .about-grid { grid-template-columns: 1.4fr 1fr; gap: 48px; } }
+.about-text p { margin: 0 0 16px; font-size: 17px; }
+.facts { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 20px; align-self: start; margin: 0; }
+.fact { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.fact:last-child { border-bottom: 0; }
+.fact dt { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.fact dd { margin: 0; font-weight: 500; }
+.fact dd small { display: block; font-weight: 400; color: var(--muted); font-size: 14px; }
+
+/* Projects */
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.tab {
+  border: 1px solid var(--line); background: var(--surface); border-radius: 999px;
+  padding: 8px 16px; font-size: 14px; font-weight: 500; min-height: 40px;
+}
+.tab[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.proj { display: grid; gap: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 18px; box-shadow: var(--shadow); }
+@media (min-width: 960px) { .proj { grid-template-columns: 1fr 1.05fr; padding: 32px; gap: 36px; } }
+.proj h3 { font-family: var(--font-display); font-size: 28px; letter-spacing: -0.02em; margin: 10px 0 6px; line-height: 1.15; }
+.proj .sub { color: var(--muted); margin: 0 0 16px; }
+.proj ul { padding-left: 18px; margin: 0 0 18px; }
+.proj li { margin-bottom: 8px; }
+.badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 12px; padding: 4px 10px; border-radius: 999px; font-weight: 500; }
+.badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.badge.dev { color: var(--warn); background: var(--warn-soft); }
+.badge.local { color: var(--muted); background: var(--surface-2); }
+.badge.done { color: var(--ok); background: var(--ok-soft); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.chip { font-size: 12.5px; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); }
+.why { margin: 0 0 22px; padding: 12px 16px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 10px 10px 0; font-size: 15.5px; }
+.why span { display: block; font-family: var(--font-mono); font-size: 11.5px; color: var(--accent); margin-bottom: 4px; }
+.case { display: flex; flex-direction: column; gap: 16px; margin: 4px 0 20px; }
+.case-step { display: flex; gap: 12px; }
+.case-n { font-family: var(--font-mono); font-size: 12px; color: var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 2px 6px; height: fit-content; margin-top: 2px; flex: none; }
+.case h4 { margin: 0 0 4px; font-size: 15px; font-weight: 600; }
+.case p { margin: 0; }
+.case ul { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+.case li { margin-bottom: 4px; }
+.run { border: 1px solid var(--line); border-radius: 10px; background: var(--bg); margin-bottom: 14px; }
+.run summary { cursor: pointer; padding: 9px 12px; font-size: 14px; font-weight: 500; }
+.run pre { margin: 0; padding: 10px 12px 12px; border-top: 1px solid var(--line); overflow-x: auto; font-size: 12.5px; line-height: 1.6; }
+.run code { font-family: var(--font-mono); }
+.code-row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+.codelink { font-size: 14px; font-weight: 500; color: var(--accent); text-decoration: none; }
+.codelink:hover { text-decoration: underline; }
+.private { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+.private svg { width: 14px; height: 14px; }
+
+/* Demo shell */
+.demo { border: 1px solid var(--line); border-radius: 12px; background: var(--bg); overflow: hidden; display: flex; flex-direction: column; min-height: 360px; min-width: 0; }
+.demo-bar { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--line); background: var(--surface-2); font-size: 13px; font-weight: 600; }
+.demo-bar .sp { margin-left: auto; }
+.demo-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.demo-note { font-size: 12.5px; color: var(--muted); padding: 10px 14px; border-top: 1px solid var(--line); }
+.demo-log { font-family: var(--font-mono); font-size: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-height: 66px; max-height: 110px; overflow: auto; color: var(--muted); }
+.demo-log div { padding: 1px 0; overflow-wrap: anywhere; }
+.demo-log .new { color: var(--ink); }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 10px; font-size: 13px; font-weight: 500; min-height: 34px; }
+.btn:hover:not(:disabled) { border-color: var(--muted); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.row { display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 14px; flex-wrap: wrap; }
+.row .grow { flex: 1; min-width: 120px; }
+.row small { display: block; color: var(--muted); font-size: 12px; }
+.state { font-family: var(--font-mono); font-size: 11px; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
+.s-ok { color: var(--ok); background: var(--ok-soft); }
+.s-wait { color: var(--warn); background: var(--warn-soft); }
+.s-bad { color: var(--bad); background: var(--bad-soft); }
+.s-info { color: var(--accent); background: var(--accent-soft); }
+.s-muted { color: var(--muted); background: var(--surface-2); }
+.switch { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px 4px 4px; background: var(--surface); font-size: 12.5px; font-weight: 500; }
+.switch i { width: 30px; height: 18px; border-radius: 999px; background: var(--line); position: relative; transition: background .2s; }
+.switch i::after { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: transform .2s; }
+.switch[aria-checked="true"] i { background: var(--ok); }
+.switch[aria-checked="true"] i::after { transform: translateX(12px); }
+
+/* Calendar demo */
+.cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+.cal-grid .dow { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted); text-align: center; padding-bottom: 2px; }
+.cal-day { aspect-ratio: 1 / .82; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 12px; padding: 4px; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+.cal-day.out { visibility: hidden; }
+.cal-day.today { border-color: var(--accent); font-weight: 700; }
+.cal-day[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.cal-dots { display: flex; gap: 3px; flex-wrap: wrap; }
+.cal-dots span { width: 6px; height: 6px; border-radius: 50%; }
+.cal-form { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
+.cal-form-title { flex-basis: 100%; margin: 0; font-size: 12.5px; font-weight: 600; }
+.field { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--bg); color: var(--ink); font: inherit; font-size: 14px; min-height: 34px; }
+.field.grow { flex: 1 1 160px; min-width: 0; }
+.cal-list { display: flex; flex-direction: column; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; min-height: 40px; }
+.cal-item { display: flex; align-items: center; gap: 8px; }
+.cal-item .grow { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.cal-item .muted, .cal-item.muted { color: var(--muted); }
+.cdot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.cal-del { border: 0; background: transparent; color: var(--muted); padding: 2px 6px; border-radius: 6px; }
+.cal-del:hover { color: var(--bad); background: var(--bad-soft); }
+.cal-ics { font-size: 11.5px; color: var(--accent); background: var(--accent-soft); border-radius: 8px; padding: 6px 10px; overflow-wrap: anywhere; }
+.toast { display: flex; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; padding: 10px 12px; font-size: 13px; flex-wrap: wrap; }
+.toast .grow { flex: 1; min-width: 140px; }
+
+/* Chat demo */
+.chat { display: grid; grid-template-columns: 1fr; gap: 10px; flex: 1; }
+@media (min-width: 520px) { .chat { grid-template-columns: 130px 1fr; } }
+.convs { display: flex; gap: 6px; flex-wrap: wrap; align-content: flex-start; }
+@media (min-width: 520px) { .convs { flex-direction: column; flex-wrap: nowrap; } }
+.conv { text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 10px; font-size: 13px; }
+.conv[aria-selected="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.msgs { display: flex; flex-direction: column; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px; min-height: 150px; max-height: 200px; overflow: auto; }
+.msg { max-width: 80%; padding: 6px 10px; border-radius: 12px; font-size: 13.5px; background: var(--surface-2); align-self: flex-start; display: flex; gap: 8px; align-items: baseline; }
+.msg.me { align-self: flex-end; background: var(--accent); color: var(--accent-ink); }
+.msg button { border: 0; background: transparent; font-size: 12px; opacity: .7; padding: 0 2px; color: inherit; }
+.compose { display: flex; gap: 6px; }
+.compose input { flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--surface); color: var(--ink); font: inherit; font-size: 14px; }
+
+/* Tech */
+.tech-panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 14px; box-shadow: var(--shadow); }
+@media (min-width: 720px) { .tech-panel { padding: 24px; } }
+.pdot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; display: inline-block; }
+.tile { font-family: var(--font-mono); font-size: 11.5px; width: 34px; height: 34px; border-radius: 8px; display: grid; place-items: center; flex: none; font-weight: 500;
+  color: color-mix(in srgb, var(--c) 65%, var(--ink)); background: color-mix(in srgb, var(--c) 18%, transparent); }
+.tech-groups { display: grid; gap: 28px 32px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+.tgroup h3 { font-family: var(--font-display); font-size: 19px; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
+.tgroup h3::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--c); }
+.tgroup ul { list-style: none; margin: 0; padding: 0; }
+.trow { display: flex; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); }
+.tgroup ul .trow:first-child { border-top: 0; }
+.trow .tbody { flex: 1; min-width: 0; }
+.trow .tname { font-weight: 600; line-height: 1.3; }
+.trow p { margin: 3px 0 8px; color: var(--muted); font-size: 14.5px; line-height: 1.5; }
+.tused { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.tused .lbl { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-right: 2px; }
+.plink { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; min-height: 30px; }
+.plink:hover { border-color: var(--muted); }
+
+/* Path */
+.timeline { list-style: none; margin: 0 0 0 6px; padding: 0; border-left: 2px solid var(--line); }
+.timeline li { position: relative; padding: 0 0 32px 26px; }
+.timeline li::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+.timeline .when { font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
+.timeline h3 { font-size: 19px; margin: 4px 0 6px; font-weight: 600; }
+.timeline p { margin: 0; color: var(--muted); max-width: 64ch; }
+
+/* Contact */
+.contact { background: var(--ink); color: var(--bg); border-radius: 20px; padding: 40px 22px; margin: 72px 0 40px; }
+@media (min-width: 720px) { .contact { padding: 56px; } }
+.contact h2 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 52px); letter-spacing: -0.02em; margin: 0 0 12px; line-height: 1.05; }
+.contact p { margin: 0 0 26px; opacity: .8; max-width: 56ch; }
+.mail { font-family: var(--font-mono); font-size: clamp(15px, 3.4vw, 22px); word-break: break-all; display: block; margin-bottom: 22px; text-decoration: none; }
+.mail:hover { text-decoration: underline; }
+.contact .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.cbtn { border: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); background: transparent; color: var(--bg); border-radius: 999px; padding: 10px 18px; font-size: 14px; font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; min-height: 42px; }
+.cbtn:hover { background: color-mix(in srgb, var(--bg) 12%, transparent); }
+.cbtn.main { background: var(--bg); color: var(--ink); border-color: var(--bg); }
+.cbtn svg { width: 16px; height: 16px; }
+footer { padding: 0 0 40px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Julián Cabrera<span>.</span></a>
+    <nav class="links" aria-label="Principal">
+      <a href="#sobre-mi" data-i18n="nav.about"></a>
+      <a href="#proyectos" data-i18n="nav.projects"></a>
+      <a href="#tecnologias" data-i18n="nav.tech"></a>
+      <a href="#trayectoria" data-i18n="nav.path"></a>
+      <a href="#contacto" data-i18n="nav.contact"></a>
+    </nav>
+    <div class="top-actions">
+      <button class="pill-btn" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+      <button class="pill-btn" id="themeBtn" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <span data-i18n="theme"></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mnav" aria-label="Secciones">
+      <a href="#sobre-mi" data-i18n="nav.about"></a>
+      <a href="#proyectos" data-i18n="nav.projects"></a>
+      <a href="#tecnologias" data-i18n="nav.tech"></a>
+      <a href="#trayectoria" data-i18n="nav.path"></a>
+      <a href="#contacto" data-i18n="nav.contact"></a>
+    </nav>
+</header>
+
+<noscript><div class="wrap" style="padding:24px 16px"><p><strong>Julián Cabrera González</strong> · Ingeniería Informática · Sistemas de Información (Universidad de Cádiz · Sapienza Università di Roma).</p><p><a href="mailto:julitrebu81@gmail.com">julitrebu81@gmail.com</a> · <a href="https://github.com/juliaan66">GitHub</a> · <a href="https://www.linkedin.com/in/juli%C3%A1n-cabrera-gonz%C3%A1lez-92837b415/">LinkedIn</a></p></div></noscript>
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker" data-i18n="hero.kicker"></p>
+      <h1 data-i18n="hero.title"></h1>
+      <p class="lead" data-i18n-html="hero.lead"></p>
+      <div class="status-line"><span class="dot"></span><span data-i18n="hero.status"></span></div>
+      <div class="hero-cta">
+        <a class="btn primary" href="#proyectos" data-i18n="cta.projects"></a>
+        <a class="btn" href="CV-Julian-Cabrera-Gonzalez.pdf" data-cv download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg><span data-i18n="cta.cv"></span></a>
+        <a class="btn" href="#contacto" data-i18n="cta.contact"></a>
+        <a class="btn icon" href="https://github.com/juliaan66" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.800 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.300-5.5-6 0-1.2.5-2.3 1.300-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.600 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
+        <a class="btn icon" href="https://www.linkedin.com/in/juli%C3%A1n-cabrera-gonz%C3%A1lez-92837b415/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.230.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+      </div>
+
+      <div class="graph-card">
+        <p class="graph-hint" data-i18n="graph.hint"></p>
+        <ul class="psum" id="psum"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="sobre-mi">
+    <div class="wrap">
+      <div class="sec-head"><h2 data-i18n="about.title"></h2></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p3"></p>
+        </div>
+        <dl class="facts">
+          <div class="fact"><dt data-i18n="fact.abroad"></dt><dd>Sapienza Università di Roma<small data-i18n="fact.abroad.s"></small></dd></div>
+          <div class="fact"><dt data-i18n="fact.edu"></dt><dd><span data-i18n="fact.edu.v"></span><small data-i18n="fact.edu.s"></small></dd></div>
+          <div class="fact"><dt data-i18n="fact.lang"></dt><dd data-i18n="fact.lang.v"></dd></div>
+          <div class="fact"><dt data-i18n="fact.place"></dt><dd data-i18n="fact.place.v"></dd></div>
+          <div class="fact"><dt data-i18n="fact.work"></dt><dd data-i18n="fact.work.v"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="proyectos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 data-i18n="proj.title"></h2>
+        <p data-i18n="proj.sub"></p>
+      </div>
+      <div class="tabs" role="tablist" id="projTabs"></div>
+      <div id="projPanel" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <section class="block" id="tecnologias">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 data-i18n="tech.title"></h2>
+        <p data-i18n="tech.sub"></p>
+      </div>
+      <div class="tech-panel">
+        <div class="tech-groups" id="techGroups"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="trayectoria">
+    <div class="wrap">
+      <div class="sec-head"><h2 data-i18n="path.title"></h2></div>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="contact" id="contacto">
+      <h2 data-i18n="contact.title"></h2>
+      <p data-i18n="contact.p"></p>
+      <a class="mail" href="mailto:julitrebu81@gmail.com">julitrebu81@gmail.com</a>
+      <div class="actions">
+        <button class="cbtn main" id="copyBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span data-i18n="contact.copy"></span>
+        </button>
+        <a class="cbtn" href="CV-Julian-Cabrera-Gonzalez.pdf" data-cv download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg><span data-i18n="cta.cv"></span></a>
+        <a class="cbtn" href="https://www.linkedin.com/in/juli%C3%A1n-cabrera-gonz%C3%A1lez-92837b415/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.230.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a class="cbtn" href="https://github.com/juliaan66" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.800 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.300-5.5-6 0-1.2.5-2.3 1.300-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.600 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          GitHub
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" data-i18n="footer"></div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- Per-viewer preferences (optional) ---------- */
+  function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  /* ---------- Texts ---------- */
+  var T = {
+    es: {
+      "nav.about": "Sobre mí", "nav.projects": "Proyectos", "nav.tech": "Tecnologías", "nav.path": "Trayectoria", "nav.contact": "Contacto",
+      "theme": "Tema",
+      "hero.kicker": "Ingeniería Informática · Sistemas de Información",
+      "hero.title": "Aplicaciones completas, de la base de datos a la pantalla.",
+      "hero.lead": "Soy <strong>Julián Cabrera</strong>, estudiante del Grado en Ingeniería Informática en la Universidad de Cádiz, con especialidad en Sistemas de Información, y con un curso de Computer Science en la Sapienza Università di Roma.",
+      "hero.status": "En busca de empleo · presencial, híbrido o remoto",
+      "graph.hint": "Proyectos personales · pulsa uno para ver el caso completo",
+      "cta.projects": "Ver proyectos", "cta.contact": "Contactar", "cta.cv": "Descargar CV",
+      "about.title": "Sobre mí",
+      "about.p1": "Me centro en el desarrollo de aplicaciones completas: modelado de bases de datos, APIs REST, lógica de negocio e interfaces web y de escritorio, con especial atención a la integridad de los datos y al funcionamiento sin conexión.",
+      "about.p3": "Busco incorporarme a un equipo de desarrollo en el que aportar desde el primer día, aprender de perfiles con más experiencia y seguir creciendo como ingeniero.",
+      "fact.edu": "Formación", "fact.edu.v": "Grado en Ingeniería Informática", "fact.edu.s": "Universidad de Cádiz · 2021 – fin previsto finales de 2027",
+      "fact.abroad": "Estancia internacional", "fact.abroad.s": "Erasmus+ · Computer Science · 2025 – 2026",
+      "fact.lang": "Idiomas", "fact.lang.v": "Español (nativo) · Inglés (B1, certificado Cambridge)",
+      "fact.place": "Ubicación", "fact.place.v": "Trebujena, Cádiz (España)",
+      "fact.work": "Disponibilidad", "fact.work.v": "España y otros países · presencial, híbrido o remoto",
+      "proj.title": "Proyectos personales", "proj.why": "Por qué lo hice",
+      "proj.sub": "Cada proyecto explica el problema, cómo lo resolví y lo más difícil, con instrucciones para ejecutarlo y una recreación que puedes probar aquí mismo.",
+      "proj.private": "Repositorio privado en GitHub",
+      "proj.ask": "Pedir acceso al código", "proj.code": "Ver el código en GitHub",
+      "proj.problem": "El problema", "proj.solution": "Cómo lo resolví", "proj.hard": "Lo más difícil",
+      "proj.run": "Cómo ejecutarlo",
+      "tech.title": "Tecnologías",
+      "tech.sub": "Agrupadas por área. En cada una, para qué la he usado y en qué proyecto puedes verla.",
+      "tech.used": "Usado en",
+      "path.title": "Trayectoria",
+      "contact.title": "Hablemos",
+      "contact.p": "Si buscas a alguien para tu equipo o quieres hablar de software, escríbeme.",
+      "contact.copy": "Copiar email", "contact.copied": "Copiado",
+      "footer": "© 2026 Julián Cabrera González"
+    },
+    en: {
+      "nav.about": "About", "nav.projects": "Projects", "nav.tech": "Tech", "nav.path": "Path", "nav.contact": "Contact",
+      "theme": "Theme",
+      "hero.kicker": "Computer Engineering · Information Systems",
+      "hero.title": "Complete apps, from the database to the screen.",
+      "hero.lead": "I'm <strong>Julián Cabrera</strong>, a BSc Computer Engineering student at the University of Cádiz, specialising in Information Systems, with a year of Computer Science at Sapienza University of Rome.",
+      "hero.status": "Open to work · on-site, hybrid or remote",
+      "graph.hint": "Personal projects · tap one to see the full case study",
+      "cta.projects": "See projects", "cta.contact": "Get in touch", "cta.cv": "Download CV",
+      "about.title": "About me",
+      "about.p1": "I focus on building complete applications: database modelling, REST APIs, business logic and web and desktop interfaces, with particular attention to data integrity and offline operation.",
+      "about.p3": "I'm looking to join a development team where I can contribute from day one, learn from more experienced engineers and keep growing.",
+      "fact.edu": "Education", "fact.edu.v": "BSc in Computer Engineering", "fact.edu.s": "University of Cádiz · 2021 – expected late 2027",
+      "fact.abroad": "Abroad", "fact.abroad.s": "Erasmus+ · Computer Science · 2025 – 2026",
+      "fact.lang": "Languages", "fact.lang.v": "Spanish (native) · English (B1, Cambridge certificate)",
+      "fact.place": "Based in", "fact.place.v": "Trebujena, Cádiz (Spain)",
+      "fact.work": "Availability", "fact.work.v": "Spain and other countries · on-site, hybrid or remote",
+      "proj.title": "Personal projects", "proj.why": "Why I built it",
+      "proj.sub": "Each project explains the problem, how I solved it and the hardest part, with instructions to run it and a recreation you can try right here.",
+      "proj.private": "Private repository on GitHub",
+      "proj.ask": "Request access to the code", "proj.code": "See the code on GitHub",
+      "proj.problem": "The problem", "proj.solution": "How I solved it", "proj.hard": "The hardest part",
+      "proj.run": "How to run it",
+      "tech.title": "Technologies",
+      "tech.sub": "Grouped by area. For each one, what I used it for and which project shows it.",
+      "tech.used": "Used in",
+      "path.title": "Path so far",
+      "contact.title": "Let's talk",
+      "contact.p": "If you're looking for someone to join your team or want to talk software, write to me.",
+      "contact.copy": "Copy email", "contact.copied": "Copied",
+      "footer": "© 2026 Julián Cabrera González"
+    }
+  };
+
+  /* ---------- Data ---------- */
+  var PROJECTS = [
+    {
+      id: "gaz", name: "GAZMULA",
+      status: { cls: "dev", es: "En desarrollo · preparando despliegue", en: "In development · preparing deployment" },
+      sub: { es: "Gestión de «Vacaciones en Paz» en la provincia de Cádiz", en: "Managing “Vacaciones en Paz” in the province of Cádiz" },
+      desc: {
+        es: "Aplicación de escritorio para la asociación que coordina la acogida en verano de niños saharauis, pensada para unos 500 menores y 500 familias en 7 municipios y asociaciones. Reúne menores, familias, documentos y temporadas en un solo sitio y rellena los anexos oficiales sin copiar nada a mano.",
+        en: "Desktop app for the association that coordinates summer hosting of Sahrawi children, designed for around 500 children and 500 families across 7 towns and associations. It keeps children, host families, documents and seasons in one place and fills in the official forms with no manual copying."
+      },
+      points: {
+        es: [
+          "Funciona sin internet: cada municipio trabaja con su propia base de datos local y sincroniza cuando hay conexión, sin perder datos.",
+          "Servidor central en Node.js + Express + SQLite, con cuentas para la administración y para cada municipio (JWT y bcrypt).",
+          "Genera en PDF el Anexo I, la Declaración responsable y el Anexo VI, y exporta a Excel y .zip.",
+          "Cada asociación puede poner su propio nombre y logo."
+        ],
+        en: [
+          "Works offline: each town works on its own local database and syncs when there's a connection, without losing data.",
+          "Central server in Node.js + Express + SQLite, with accounts for the admin and for each town (JWT and bcrypt).",
+          "Generates the official forms (Annex I, Responsible declaration, Annex VI) as PDF and exports to Excel and .zip.",
+          "Each association can use its own name and logo."
+        ]
+      },
+      tech: ["Electron", "React", "TypeScript", "Vite", "Node.js", "Express", "SQLite", "jsPDF", "JWT"],
+      problem: {
+        es: "Cada temporada se gestionan unos 500 menores y 500 familias de acogida en 7 municipios y asociaciones, y se copiaban a mano los mismos datos (menor, guardadores, DNI, convivientes) en varios anexos oficiales, con los errores que eso provoca. Lo usan voluntarios con poca experiencia con ordenadores y no siempre hay internet.",
+        en: "Each season covers around 500 children and 500 host families across 7 towns and associations, and the same data (child, guardians, ID numbers, household members) was copied by hand into several official forms, with the mistakes that brings. It's used by volunteers with little computer experience, and there isn't always internet."
+      },
+      solution: {
+        es: "Una única ficha por familia de la que salen todos los anexos en PDF. Cada equipo trabaja con su propia base de datos local y sincroniza con un servidor central cuando hay conexión. La interfaz usa los mismos términos del programa (menor, guardador/a, daira) y textos sencillos.",
+        en: "A single record per family that generates every official form as PDF. Each computer works on its own local database and syncs with a central server when there's a connection. The interface uses the programme's own terms and plain wording."
+      },
+      hard: {
+        es: "Que la sincronización nunca pierda datos, aunque un municipio trabaje varios días sin conexión.",
+        en: "Making sure sync never loses data, even when a town works offline for days."
+      },
+      why: {
+        es: "Conocí el programa a través de un familiar que colaboraba como voluntario en la gestión de la documentación. Vi que el papeleo de cada temporada consumía mucho tiempo y daba lugar a errores, así que propuse a la asociación desarrollar una herramienta que lo simplificara.",
+        en: "I got to know the programme through a relative who volunteered with its paperwork. Seeing how much time each season's documentation took, and how error-prone it was, I offered the association to build a tool that would simplify it."
+      },
+      run: ["cd gazmula-server && npm install && npm start", "cd gazmula-app && npm install && npm run dev"],
+      repo: "https://github.com/juliaan66/gazmula-proyect", isPublic: false
+    },
+    {
+      id: "fact", name: "Facturador Xignux",
+      status: { cls: "dev", es: "En desarrollo · local", en: "In development · local" },
+      sub: { es: "Facturas revisadas, archivadas y listas para VeriFactu", en: "Invoices reviewed, archived and ready for VeriFactu" },
+      desc: {
+        es: "Aplicación local que genera facturas, las pasa por una cola de revisión antes de emitirlas, las archiva en PDF por año y mes y prepara su registro en la AEAT con VeriFactu.",
+        en: "Local app that generates invoices, sends them through a review queue before issuing them, archives them as PDF by year and month and prepares their registration with the Spanish Tax Agency (VeriFactu)."
+      },
+      points: {
+        es: [
+          "Máquina de estados que impide saltos ilegales: solo se editan las facturas generadas, en revisión o rechazadas.",
+          "Importes con Decimal, nunca float, para que no se descuadre ni un céntimo.",
+          "Registro de facturación en XML con huella encadenada, como exige VeriFactu (RD 1007/2023).",
+          "Interfaz con FastAPI y HTMX que se abre en el navegador, sin instalar nada en cada equipo."
+        ],
+        en: [
+          "A state machine blocks illegal jumps: only generated, in-review or rejected invoices can be edited.",
+          "Amounts use Decimal, never float, so not a single cent goes missing.",
+          "XML invoice records with a chained hash, as VeriFactu requires (Royal Decree 1007/2023).",
+          "FastAPI + HTMX interface that opens in the browser, with nothing to install on each computer."
+        ]
+      },
+      tech: ["Python", "FastAPI", "HTMX", "Jinja2", "SQLite", "XML", "PDF", "pytest"],
+      problem: {
+        es: "VeriFactu obliga a registrar cada factura en la AEAT con una huella encadenada a la anterior, así que una factura mal emitida no se puede borrar ni rehacer. Además, los datos de partida llegaban en hojas de Excel.",
+        en: "VeriFactu requires every invoice to be registered with the Spanish Tax Agency with a hash chained to the previous one, so a wrong invoice can't simply be deleted or redone. On top of that, the source data arrived in Excel sheets."
+      },
+      solution: {
+        es: "Las facturas se generan desde Excel y pasan por una cola de revisión antes de emitirse. Una máquina de estados impide saltos ilegales, los importes usan Decimal y cada factura se archiva en PDF con un nombre único por cliente, fecha y número.",
+        en: "Invoices are generated from Excel and go through a review queue before being issued. A state machine blocks illegal jumps, amounts use Decimal, and each invoice is archived as PDF with a unique name by client, date and number."
+      },
+      hard: {
+        es: "Modelar los estados y la huella encadenada para que el registro sea correcto antes de tener el certificado digital real.",
+        en: "Modelling the states and the chained hash so the records are right before having the real digital certificate."
+      },
+      why: {
+        es: "Lo desarrollé para el negocio familiar de mi padre, con el objetivo de ahorrarle horas de trabajo administrativo y dejarlo preparado para la obligación de VeriFactu.",
+        en: "I built it for my father's family business, to save him hours of admin work and get the business ready for the VeriFactu requirement."
+      },
+      run: ["pip install -r requirements.txt", "python -m app.demo   # http://127.0.0.1:8000"],
+      repo: "https://github.com/juliaan66/Facturador-Xignux", isPublic: false
+    },
+    {
+      id: "cal", name: "Calendario Local",
+      status: { cls: "local", es: "En local · uso personal", en: "Local · personal use" },
+      sub: { es: "Mi calendario, sin cuentas ni nube", en: "My own calendar, no accounts, no cloud" },
+      desc: {
+        es: "Calendario personal para Windows. Los eventos se guardan en un archivo del ordenador y el iPhone se suscribe a ellos por la red Wi-Fi.",
+        en: "Personal calendar for Windows. Events are stored in a file on the computer and the iPhone subscribes to them over the Wi-Fi network."
+      },
+      points: {
+        es: [
+          "Vistas de día, semana, mes y año, con tema claro, oscuro o automático.",
+          "Eventos que se repiten (diario, semanal por días, mensual, anual) enviados al iPhone como RRULE y EXDATE.",
+          "Avisos con notificaciones nativas de Windows (posponer o descartar), aunque la ventana esté cerrada.",
+          "Servidor en Python que publica un feed .ics; el iPhone se conecta escaneando un QR."
+        ],
+        en: [
+          "Day, week, month and year views, with light, dark or automatic theme.",
+          "Recurring events (daily, weekly by weekday, monthly, yearly) sent to the iPhone as RRULE and EXDATE.",
+          "Reminders as native Windows notifications (snooze or dismiss), even with the window closed.",
+          "Python server publishing an .ics feed; the iPhone connects by scanning a QR code."
+        ]
+      },
+      tech: ["Python", "HTML", "CSS", "JavaScript", "iCalendar", "PowerShell"],
+      problem: {
+        es: "Quería un calendario en el ordenador sin cuentas ni nube, que llegara también al iPhone y que avisara aunque la ventana estuviera cerrada.",
+        en: "I wanted a calendar on my computer with no accounts or cloud, that also reached my iPhone and reminded me even with the window closed."
+      },
+      solution: {
+        es: "Un servidor en Python guarda los eventos en un archivo local y publica un feed .ics en la red Wi-Fi. El iPhone se suscribe escaneando un QR y recibe repeticiones y alarmas; las notificaciones de Windows salen del propio servidor.",
+        en: "A Python server stores events in a local file and publishes an .ics feed on the Wi-Fi network. The iPhone subscribes by scanning a QR code and receives recurrences and alarms; Windows notifications come from the server itself."
+      },
+      hard: {
+        es: "Que las repeticiones se comporten igual que en el iPhone: meses sin día 31, el 29 de febrero o borrar solo un día de una serie (EXDATE).",
+        en: "Making recurrences behave exactly like on the iPhone: months without a 31st, 29 February, or deleting a single day from a series (EXDATE)."
+      },
+      why: {
+        es: "Quería tener el control de mis propios datos, sin cuentas ni servicios en la nube, y a la vez una forma sencilla de unir mi ordenador con Windows y mi iPhone sin depender de iCloud ni de Google.",
+        en: "I wanted full control of my own data, with no accounts or cloud services, and at the same time a simple way to connect my Windows computer and my iPhone without relying on iCloud or Google."
+      },
+      run: ["python server.py   # o iniciar-calendario.bat"],
+      repo: "https://github.com/juliaan66/calendario-local", isPublic: false
+    },
+    {
+      id: "wasa", name: "WasaText",
+      status: { cls: "done", es: "Completado · académico", en: "Completed · academic" },
+      sub: { es: "Mensajería web · Sapienza Università di Roma", en: "Web messaging · Sapienza University of Rome" },
+      desc: {
+        es: "Aplicación de mensajería web hecha para la asignatura WASA: conversaciones, grupos, reenvío de mensajes y reacciones, sobre una API REST propia.",
+        en: "Web messaging app built for the WASA course: conversations, groups, message forwarding and reactions, on top of my own REST API."
+      },
+      points: {
+        es: [
+          "Backend en Go con SQLite y cierre ordenado del servidor (espera a que terminen las peticiones en curso).",
+          "API REST documentada con OpenAPI: sesión, usuarios, conversaciones, mensajes, reacciones y grupos.",
+          "Backend y frontend en contenedores Docker, levantados con docker-compose."
+        ],
+        en: [
+          "Go backend with SQLite and graceful shutdown (waits for in-flight requests to finish).",
+          "REST API documented with OpenAPI: session, users, conversations, messages, reactions and groups.",
+          "Backend and frontend in Docker containers, started with docker-compose."
+        ]
+      },
+      tech: ["Go", "JavaScript", "SQLite", "OpenAPI", "Docker"],
+      problem: {
+        es: "Proyecto de la asignatura WASA: una aplicación de mensajería cuya API estaba definida de antemano en OpenAPI y había que respetar al pie de la letra.",
+        en: "Project for the WASA course: a messaging app whose API was defined beforehand in OpenAPI and had to be followed to the letter."
+      },
+      solution: {
+        es: "Backend en Go con SQLite que implementa la especificación completa (sesión, usuarios, conversaciones, grupos, mensajes y reacciones), un frontend web y todo empaquetado con Docker para levantarlo con un solo comando.",
+        en: "A Go backend with SQLite implementing the full spec (session, users, conversations, groups, messages and reactions), a web frontend, and everything packaged with Docker to start with a single command."
+      },
+      hard: {
+        es: "Mantener el backend fiel al contrato OpenAPI y cerrar el servidor de forma ordenada sin cortar peticiones en curso.",
+        en: "Keeping the backend faithful to the OpenAPI contract and shutting the server down gracefully without cutting in-flight requests."
+      },
+      why: {
+        es: "Fue un reto personal: sacar adelante un proyecto completo en Roma, en otro idioma y con un sistema universitario distinto al que conocía.",
+        en: "It was a personal challenge: delivering a complete project in Rome, in another language and within a university system different from the one I knew."
+      },
+      run: ["docker compose up --build", "# web: http://localhost:8080 · API: http://localhost:3001"],
+      repo: "https://github.com/juliaan66/wasatext", isPublic: false
+    }
+  ];
+
+  var AREAS = [
+    { id: "desk", es: "Escritorio", en: "Desktop" },
+    { id: "web", es: "Web y backend", en: "Web & backend" },
+    { id: "data", es: "Datos y despliegue", en: "Data & deployment" }
+  ];
+  var TOOLS = [
+    { id: "electron", label: "Electron", area: "desk", p: ["gaz"] },
+    { id: "react", label: "React", area: "desk", p: ["gaz"] },
+    { id: "ts", label: "TypeScript", area: "desk", p: ["gaz"] },
+    { id: "html", label: "HTML · CSS · JS", area: "web", p: ["cal", "wasa", "fact"] },
+    { id: "node", label: "Node.js · Express", area: "web", p: ["gaz"] },
+    { id: "fastapi", label: "FastAPI · HTMX", area: "web", p: ["fact"] },
+    { id: "python", label: "Python", area: "web", p: ["fact", "cal"] },
+    { id: "go", label: "Go", area: "web", p: ["wasa"] },
+    { id: "sqlite", label: "SQLite", area: "data", p: ["gaz", "fact", "wasa"] },
+    { id: "docs", label: "PDF · Excel · XML", area: "data", p: ["gaz", "fact"] },
+    { id: "ics", label: "iCalendar (.ics)", area: "data", p: ["cal"] },
+    { id: "docker", label: "Docker", area: "data", p: ["wasa"] }
+  ];
+
+  var TECH_AREAS = [
+    { id: "lang", es: "Lenguajes", en: "Languages" },
+    { id: "front", es: "Frontend y escritorio", en: "Frontend & desktop" },
+    { id: "back", es: "Backend y APIs", en: "Backend & APIs" },
+    { id: "data", es: "Datos y formatos", en: "Data & formats" },
+    { id: "ops", es: "Calidad y despliegue", en: "Quality & delivery" }
+  ];
+  var TECH = [
+    { id: "ts", ab: "TS", name: "TypeScript", area: "lang", p: ["gaz"],
+      es: "Toda la aplicación de escritorio de GAZMULA, con tipos para menores, familias, convivientes y temporadas.",
+      en: "The whole GAZMULA desktop app, with types for children, families, household members and seasons." },
+    { id: "js", ab: "JS", name: "JavaScript", area: "lang", p: ["gaz", "cal", "wasa"],
+      es: "El servidor de GAZMULA, la interfaz del calendario y el frontend de WasaText.",
+      en: "The GAZMULA server, the calendar interface and the WasaText frontend." },
+    { id: "py", ab: "Py", name: "Python", area: "lang", p: ["fact", "cal"],
+      es: "Todo el facturador (dominio, validaciones, PDF y VeriFactu) y el servidor del calendario con sus avisos de Windows.",
+      en: "The whole invoicing app (domain, validation, PDF and VeriFactu) and the calendar server with its Windows reminders." },
+    { id: "go", ab: "Go", name: "Go", area: "lang", p: ["wasa"],
+      es: "El backend REST de WasaText: rutas, acceso a base de datos y cierre ordenado del servidor.",
+      en: "The WasaText REST backend: routes, database access and graceful server shutdown." },
+    { id: "sql", ab: "SQL", name: "SQL", area: "lang", p: ["gaz", "fact", "wasa"],
+      es: "Esquemas y consultas en SQLite para los tres proyectos con base de datos.",
+      en: "SQLite schemas and queries for the three projects with a database." },
+    { id: "ps", ab: "PS", name: "PowerShell", area: "lang", p: ["cal"],
+      es: "Registro del calendario como aplicación de Windows, con su icono y notificaciones.",
+      en: "Registering the calendar as a Windows app, with its icon and notifications." },
+    { id: "react", ab: "Re", name: "React", area: "front", p: ["gaz"],
+      es: "La interfaz de GAZMULA con React Router: listados, fichas de familias y formularios pensados para personas con poca experiencia con ordenadores.",
+      en: "The GAZMULA interface with React Router: lists, family records and forms designed for people with little computer experience." },
+    { id: "electron", ab: "El", name: "Electron", area: "front", p: ["gaz"],
+      es: "Empaqueta GAZMULA como aplicación de Windows con instalador propio.",
+      en: "Packages GAZMULA as a Windows app with its own installer." },
+    { id: "vite", ab: "Vi", name: "Vite", area: "front", p: ["gaz"],
+      es: "Entorno de desarrollo y compilación de la app de escritorio.",
+      en: "Dev environment and build for the desktop app." },
+    { id: "html", ab: "</>", name: "HTML · CSS", area: "front", p: ["cal", "fact", "wasa"],
+      es: "Interfaces accesibles con tema claro y oscuro, como la del calendario o esta misma web.",
+      en: "Accessible interfaces with light and dark themes, like the calendar's or this very site." },
+    { id: "htmx", ab: "hx", name: "HTMX · Jinja2", area: "front", p: ["fact"],
+      es: "La cola de revisión del facturador: botones que cambian el estado de la factura sin recargar la página.",
+      en: "The invoice review queue: buttons that change an invoice's state without reloading the page." },
+    { id: "node", ab: "No", name: "Node.js · Express", area: "back", p: ["gaz"],
+      es: "El servidor central de GAZMULA: sincronización, cuentas de municipios y copias de seguridad.",
+      en: "The GAZMULA central server: sync, town accounts and backups." },
+    { id: "fastapi", ab: "FA", name: "FastAPI", area: "back", p: ["fact"],
+      es: "Servidor local del facturador, con validación de datos mediante Pydantic.",
+      en: "Local server for the invoicing app, with data validation through Pydantic." },
+    { id: "rest", ab: "API", name: "REST · OpenAPI", area: "back", p: ["wasa", "gaz"],
+      es: "Diseño de APIs: la de WasaText, documentada con OpenAPI, y la de sincronización de GAZMULA.",
+      en: "API design: WasaText's, documented with OpenAPI, and GAZMULA's sync API." },
+    { id: "auth", ab: "JWT", name: "JWT · bcrypt", area: "back", p: ["gaz"],
+      es: "Inicio de sesión de la administración y de cada municipio, con contraseñas cifradas.",
+      en: "Login for the admin and each town, with hashed passwords." },
+    { id: "sqlite", ab: "SL", name: "SQLite", area: "data", p: ["gaz", "fact", "wasa"],
+      es: "Base de datos de un solo archivo: local en la app de GAZMULA (sql.js) y en su servidor, en el facturador y en WasaText.",
+      en: "Single-file database: local in the GAZMULA app (sql.js) and on its server, in the invoicing app and in WasaText." },
+    { id: "pdf", ab: "PDF", name: "PDF · Excel · XML", area: "data", p: ["gaz", "fact"],
+      es: "Anexos oficiales en PDF y exportación a Excel en GAZMULA; facturas en PDF y registros XML para VeriFactu en el facturador.",
+      en: "Official PDF forms and Excel export in GAZMULA; PDF invoices and XML records for VeriFactu in the invoicing app." },
+    { id: "ics", ab: "ics", name: "iCalendar", area: "data", p: ["cal"],
+      es: "Feed .ics con repeticiones (RRULE/EXDATE) y alarmas, al que se suscribe el iPhone.",
+      en: ".ics feed with recurrences (RRULE/EXDATE) and alarms that the iPhone subscribes to." },
+    { id: "docker", ab: "Dk", name: "Docker", area: "ops", p: ["wasa"],
+      es: "Dockerfiles para el backend y el frontend de WasaText y docker-compose para levantarlo todo.",
+      en: "Dockerfiles for the WasaText backend and frontend, plus docker-compose to run everything." },
+    { id: "test", ab: "✓", name: "Testing", area: "ops", p: ["gaz", "fact"],
+      es: "Pruebas automáticas con node:test en GAZMULA y pytest en el facturador.",
+      en: "Automated tests with node:test in GAZMULA and pytest in the invoicing app." },
+    { id: "git", ab: "Git", name: "Git · GitHub", area: "ops", p: ["gaz", "fact", "cal", "wasa"],
+      es: "Control de versiones en todos mis proyectos.",
+      en: "Version control in all my projects." }
+  ];
+
+  var PATH = [
+    { when: { es: "2026", en: "2026" },
+      t: { es: "Primeros proyectos con usuarios reales", en: "First projects with real users" },
+      d: { es: "GAZMULA, para la asociación de «Vacaciones en Paz» en Cádiz, y Facturador Xignux, con registro en la AEAT mediante VeriFactu.", en: "GAZMULA, for the “Vacaciones en Paz” association in Cádiz, and Facturador Xignux, with Spanish Tax Agency registration through VeriFactu." } },
+    { when: { es: "2025 – 2026", en: "2025 – 2026" },
+      t: { es: "Computer Science · Sapienza Università di Roma", en: "Computer Science · Sapienza University of Rome" },
+      d: { es: "Un curso en Roma, en un entorno internacional y en otro idioma. Allí hice WasaText, una aplicación de mensajería con backend en Go.", en: "A year in Rome, in an international environment and another language. There I built WasaText, a messaging app with a Go backend." } },
+    { when: { es: "2021 – actualidad", en: "2021 – present" },
+      t: { es: "Grado en Ingeniería Informática · Universidad de Cádiz", en: "BSc in Computer Engineering · University of Cádiz" },
+      d: { es: "Itinerario de Sistemas de Información.", en: "Information Systems track." } }
+  ];
+
+  /* ---------- State ---------- */
+  var lang = load("lang") === "en" ? "en" : "es";
+  var currentProject = "gaz";
+
+  function t(k) { return (T[lang] && T[lang][k]) || k; }
+  function L(o) { return o[lang]; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function projName(id) { for (var i = 0; i < PROJECTS.length; i++) if (PROJECTS[i].id === id) return PROJECTS[i].name; return id; }
+  function pad3(n) { return ("00" + n).slice(-3); }
+
+  /* ---------- Theme ---------- */
+  var root = document.documentElement;
+  var storedTheme = load("theme");
+  if (storedTheme === "light" || storedTheme === "dark") root.setAttribute("data-theme", storedTheme);
+  function isDark() {
+    var a = root.getAttribute("data-theme");
+    if (a) return a === "dark";
+    return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
+  document.getElementById("themeBtn").addEventListener("click", function () {
+    var next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    save("theme", next);
+  });
+
+  /* ---------- i18n ---------- */
+  function applyStatic() {
+    root.lang = lang;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) { el.textContent = t(el.getAttribute("data-i18n")); });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) { el.innerHTML = t(el.getAttribute("data-i18n-html")); });
+    var lb = document.getElementById("langBtn");
+    lb.textContent = lang === "es" ? "EN" : "ES";
+    lb.setAttribute("aria-label", lang === "es" ? "Switch to English" : "Cambiar a español");
+    document.title = lang === "es" ? "Julián Cabrera González · Desarrollador" : "Julián Cabrera González · Developer";
+    document.querySelectorAll("[data-cv]").forEach(function (a) { a.setAttribute("href", lang === "es" ? "CV-Julian-Cabrera-Gonzalez.pdf" : "CV-Julian-Cabrera-Gonzalez-EN.pdf"); });
+  }
+  document.getElementById("langBtn").addEventListener("click", function () {
+    lang = lang === "es" ? "en" : "es";
+    save("lang", lang);
+    renderAll();
+  });
+
+  /* ---------- Hero summary ---------- */
+  var SUMMARY = {
+    gaz: { line: { es: "Gestión sin conexión para una asociación de acogida, con sincronización central y anexos oficiales en PDF.", en: "Offline management for a host-family association, with central sync and official PDF forms." },
+      st: { es: "En desarrollo", en: "In development" } },
+    fact: { line: { es: "Facturas con cola de revisión, archivo en PDF y registro en la AEAT mediante VeriFactu.", en: "Invoices with a review queue, PDF archive and Tax Agency registration via VeriFactu." },
+      st: { es: "En desarrollo", en: "In development" } },
+    cal: { line: { es: "Calendario de Windows sin nube, con avisos nativos y suscripción desde el iPhone.", en: "Windows calendar with no cloud, native reminders and an iPhone subscription." },
+      st: { es: "Uso personal", en: "Personal use" } },
+    wasa: { line: { es: "Mensajería web con backend REST en Go, base de datos y despliegue con Docker.", en: "Web messaging with a Go REST backend, a database and Docker deployment." },
+      st: { es: "Completado", en: "Completed" } }
+  };
+  function renderStack() {
+    var el = document.getElementById("psum");
+    el.innerHTML = PROJECTS.map(function (p) {
+      var s = SUMMARY[p.id];
+      return '<li><button type="button" class="prow" data-go="' + p.id + '">' + pdot(p.id) +
+        '<span class="pname">' + esc(p.name) + '</span><span class="pline">' + esc(L(s.line)) + '</span>' +
+        '<span class="badge ' + p.status.cls + '">' + esc(L(s.st)) + '</span><span class="go" aria-hidden="true">→</span></button></li>';
+    }).join("");
+    el.querySelectorAll(".prow").forEach(function (b) {
+      b.addEventListener("click", function () {
+        selectProject(b.dataset.go);
+        document.getElementById("proyectos").scrollIntoView();
+      });
+    });
+  }
+
+  /* ---------- Projects ---------- */
+  var lockIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>';
+
+  function renderTabs() {
+    var h = "";
+    PROJECTS.forEach(function (p) {
+      h += '<button type="button" role="tab" class="tab" id="tab-' + p.id + '" aria-controls="projPanel" aria-selected="' + (p.id === currentProject) + '" data-p="' + p.id + '">' + esc(p.name) + "</button>";
+    });
+    var el = document.getElementById("projTabs");
+    el.innerHTML = h;
+    el.querySelectorAll(".tab").forEach(function (b) { b.addEventListener("click", function () { selectProject(b.dataset.p); }); });
+  }
+
+  function selectProject(id) {
+    currentProject = id;
+    document.querySelectorAll("#projTabs .tab").forEach(function (b) { b.setAttribute("aria-selected", String(b.dataset.p === id)); });
+    renderProject();
+  }
+
+  function renderProject() {
+    var p = PROJECTS.filter(function (x) { return x.id === currentProject; })[0];
+    var panel = document.getElementById("projPanel");
+    panel.setAttribute("aria-labelledby", "tab-" + p.id);
+    var pts = L(p.points).map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("");
+    var chips = p.tech.map(function (x) { return '<span class="chip">' + esc(x) + "</span>"; }).join("");
+    var code;
+    if (p.isPublic) {
+      code = '<a class="codelink" href="' + p.repo + '" target="_blank" rel="noopener">' + esc(t("proj.code")) + " ↗</a>";
+    } else {
+      var subj = encodeURIComponent((lang === "es" ? "Acceso al código de " : "Access to the code of ") + p.name);
+      code = '<span class="private">' + lockIcon + esc(t("proj.private")) + "</span>" +
+        '<a class="codelink" href="mailto:julitrebu81@gmail.com?subject=' + subj + '">' + esc(t("proj.ask")) + " →</a>";
+    }
+    panel.innerHTML =
+      '<article class="proj">' +
+        "<div>" +
+          '<span class="badge ' + p.status.cls + '">' + esc(L(p.status)) + "</span>" +
+          "<h3>" + esc(p.name) + "</h3>" +
+          '<p class="sub">' + esc(L(p.sub)) + "</p>" +
+          '<blockquote class="why"><span>' + esc(t("proj.why")) + "</span>" + esc(L(p.why)) + "</blockquote>" +
+          '<div class="case">' +
+            '<div class="case-step"><span class="case-n">01</span><div><h4>' + esc(t("proj.problem")) + "</h4><p>" + esc(L(p.problem)) + "</p></div></div>" +
+            '<div class="case-step"><span class="case-n">02</span><div><h4>' + esc(t("proj.solution")) + "</h4><p>" + esc(L(p.solution)) + "</p><ul>" + pts + "</ul></div></div>" +
+            '<div class="case-step"><span class="case-n">03</span><div><h4>' + esc(t("proj.hard")) + "</h4><p>" + esc(L(p.hard)) + "</p></div></div>" +
+          "</div>" +
+          '<div class="chips">' + chips + "</div>" +
+          '<details class="run"><summary>' + esc(t("proj.run")) + '</summary><pre><code>' + p.run.map(esc).join("\n") + "</code></pre></details>" +
+          '<div class="code-row">' + code + "</div>" +
+        "</div>" +
+        '<div class="demo" id="demo"></div>' +
+      "</article>";
+    DEMOS[p.id](document.getElementById("demo"));
+  }
+
+  /* ---------- Demos ---------- */
+  function logLine(box, text) {
+    var old = box.querySelector(".new"); if (old) old.classList.remove("new");
+    var d = document.createElement("div"); d.className = "new"; d.textContent = text;
+    box.insertBefore(d, box.firstChild);
+  }
+
+  var DEMOS = {
+    gaz: function (el) {
+      var es = lang === "es";
+      var st = { online: true, n: 15, server: 2, rows: [{ id: 13, ok: true }, { id: 14, ok: true }] };
+      el.innerHTML =
+        '<div class="demo-bar">GAZMULA · ' + (es ? "Municipio de ejemplo" : "Sample town") +
+          '<button type="button" class="switch sp" role="switch" aria-checked="true" id="gNet"><i></i><span></span></button></div>' +
+        '<div class="demo-body">' +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">' +
+            '<button type="button" class="btn primary" id="gAdd">+ ' + (es ? "Registrar menor" : "Register child") + "</button>" +
+            '<span class="state s-info" id="gServer"></span>' +
+          "</div>" +
+          '<div id="gRows" style="display:flex;flex-direction:column;gap:6px"></div>' +
+          '<div class="demo-log" id="gLog" aria-live="polite"></div>' +
+        "</div>" +
+        '<div class="demo-note">' + (es ? "Recreación interactiva. Quita la conexión, registra menores y vuelve a conectar: los cambios se sincronizan solos." : "Interactive recreation. Turn the connection off, register children and turn it back on: changes sync by themselves.") + "</div>";
+      var net = el.querySelector("#gNet"), rows = el.querySelector("#gRows"), log = el.querySelector("#gLog"), srv = el.querySelector("#gServer");
+      function draw() {
+        net.setAttribute("aria-checked", String(st.online));
+        net.querySelector("span").textContent = st.online ? (es ? "Con conexión" : "Online") : (es ? "Sin conexión" : "Offline");
+        srv.textContent = (es ? "Servidor central: " : "Central server: ") + st.server + (es ? " registros" : " records");
+        rows.innerHTML = st.rows.slice().reverse().slice(0, 4).map(function (r) {
+          return '<div class="row"><div class="grow">' + (es ? "Familia Nº " : "Family No. ") + pad3(r.id) +
+            "<small>" + (es ? "Menor, guardadores y documentos" : "Child, guardians and documents") + "</small></div>" +
+            '<span class="state ' + (r.ok ? "s-ok" : "s-wait") + '">' + (r.ok ? (es ? "Sincronizado" : "Synced") : (es ? "Pendiente" : "Pending")) + "</span></div>";
+        }).join("");
+      }
+      function sync() {
+        var pend = st.rows.filter(function (r) { return !r.ok; });
+        if (!st.online || !pend.length) return;
+        logLine(log, es ? "Sincronizando " + pend.length + " cambio(s)…" : "Syncing " + pend.length + " change(s)…");
+        setTimeout(function () {
+          if (!st.online) return;
+          var still = pend.filter(function (r) { return !r.ok; });
+          if (!still.length) return;
+          still.forEach(function (r) { r.ok = true; });
+          st.server += still.length;
+          logLine(log, es ? "✓ " + still.length + " cambio(s) en el servidor, sin conflictos" : "✓ " + still.length + " change(s) on the server, no conflicts");
+          draw();
+        }, 700);
+      }
+      net.addEventListener("click", function () {
+        st.online = !st.online;
+        logLine(log, st.online ? (es ? "Conexión recuperada" : "Back online") : (es ? "Sin conexión · se sigue trabajando en local" : "Offline · still working locally"));
+        draw(); sync();
+      });
+      el.querySelector("#gAdd").addEventListener("click", function () {
+        var r = { id: st.n++, ok: false }; st.rows.push(r);
+        logLine(log, (es ? "Guardado en local: Familia Nº " : "Saved locally: Family No. ") + pad3(r.id));
+        draw(); sync();
+      });
+      logLine(log, es ? "Base de datos local abierta" : "Local database opened");
+      draw();
+    },
+
+    fact: function (el) {
+      var es = lang === "es";
+      function init() { return [
+        { n: "F2026-0045", c: es ? "Cliente A" : "Client A", total: "1.210,00 €", s: "GENERADA" },
+        { n: "F2026-0046", c: es ? "Cliente B" : "Client B", total: "363,00 €", s: "GENERADA", err: true },
+        { n: "F2026-0047", c: es ? "Cliente C" : "Client C", total: "96,80 €", s: "EN_REVISION" }
+      ]; }
+      var inv = init();
+      var cls = { GENERADA: "s-info", EN_REVISION: "s-wait", LISTA: "s-ok", CANCELADA: "s-muted" };
+      el.innerHTML =
+        '<div class="demo-bar">' + (es ? "Cola de revisión" : "Review queue") + '<button type="button" class="btn sp" id="fReset">' + (es ? "Reiniciar" : "Reset") + "</button></div>" +
+        '<div class="demo-body"><div id="fRows" style="display:flex;flex-direction:column;gap:6px"></div><div class="demo-log" id="fLog" aria-live="polite"></div></div>' +
+        '<div class="demo-note">' + (es ? "Recreación interactiva de la máquina de estados. «Listo» solo funciona si la factura no tiene errores; las facturas listas o canceladas ya no se pueden tocar." : "Interactive recreation of the state machine. “Ready” only works when the invoice has no errors; ready or cancelled invoices can no longer be changed.") + "</div>";
+      var rows = el.querySelector("#fRows"), log = el.querySelector("#fLog");
+      function move(i, to) { var f = inv[i]; logLine(log, f.n + ": " + f.s + " → " + to); f.s = to; draw(); }
+      function draw() {
+        rows.innerHTML = inv.map(function (f, i) {
+          var b = "";
+          if (f.s === "GENERADA") b += '<button type="button" class="btn" data-a="rev" data-i="' + i + '">' + (es ? "Revisar" : "Review") + "</button>";
+          if (f.s === "EN_REVISION" && f.err) b += '<button type="button" class="btn" data-a="fix" data-i="' + i + '">' + (es ? "Corregir NIF" : "Fix tax ID") + "</button>";
+          if (f.s === "EN_REVISION") b += '<button type="button" class="btn primary" data-a="ok" data-i="' + i + '"' + (f.err ? " disabled" : "") + ">" + (es ? "Listo" : "Ready") + "</button>";
+          if (f.s === "GENERADA" || f.s === "EN_REVISION") b += '<button type="button" class="btn" data-a="cancel" data-i="' + i + '">' + (es ? "Cancelar" : "Cancel") + "</button>";
+          return '<div class="row"><div class="grow"><span class="mono">' + f.n + "</span> · " + esc(f.c) + "<small>" + f.total +
+            (f.err ? ' · <span style="color:var(--bad)">' + (es ? "NIF no válido" : "Invalid tax ID") + "</span>" : "") + "</small></div>" +
+            '<span class="state ' + cls[f.s] + '">' + f.s + "</span>" + b + "</div>";
+        }).join("");
+        rows.querySelectorAll("button").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var i = +btn.dataset.i, a = btn.dataset.a;
+            if (a === "rev") move(i, "EN_REVISION");
+            if (a === "ok") move(i, "LISTA");
+            if (a === "cancel") move(i, "CANCELADA");
+            if (a === "fix") { inv[i].err = false; logLine(log, inv[i].n + (es ? ": NIF corregido, validación correcta" : ": tax ID fixed, validation passed")); draw(); }
+          });
+        });
+      }
+      el.querySelector("#fReset").addEventListener("click", function () { inv = init(); logLine(log, es ? "Cola reiniciada" : "Queue reset"); draw(); });
+      logLine(log, es ? "3 facturas generadas desde Excel" : "3 invoices generated from Excel");
+      draw();
+    },
+
+    cal: function (el) {
+      var es = lang === "es";
+      var now = new Date(), y = now.getFullYear(), m = now.getMonth(), today = now.getDate();
+      var days = new Date(y, m + 1, 0).getDate();
+      var startDow = (new Date(y, m, 1).getDay() + 6) % 7;
+      var dows = es ? ["L", "M", "X", "J", "V", "S", "D"] : ["M", "T", "W", "T", "F", "S", "S"];
+      var monthName = new Date(y, m, 1).toLocaleDateString(es ? "es-ES" : "en-GB", { month: "long", year: "numeric" });
+      var deadline = Math.min(days, 18), review = Math.min(days, 25);
+      function eventsOn(d) {
+        var dow = (new Date(y, m, d).getDay() + 6) % 7, out = [];
+        if (d === 1) out.push({ c: "#be123c", h: es ? "Todo el día" : "All day", t: es ? "Pagar alquiler" : "Pay rent", r: es ? "cada mes" : "monthly" });
+        if (dow === 0 || dow === 2) out.push({ c: "#0f766e", h: "10:00", t: es ? "Clase · Sistemas de Información" : "Class · Information Systems", r: es ? "cada semana (L, X)" : "weekly (Mon, Wed)" });
+        if (d === review) out.push({ c: "#7c3aed", h: "17:00", t: es ? "Revisión con la asociación" : "Review with the association", r: "" });
+        if (d === deadline) out.push({ c: "#b45309", h: "23:59", t: es ? "Entrega de práctica" : "Assignment due", r: "" });
+        return out;
+      }
+      /* Events the visitor adds: { id, d, h, t, rep: "none" | "daily" | "weekly", c } */
+      var mine = [], nextId = 1, sel = today;
+      var palette = ["#2563eb", "#db2777", "#ca8a04", "#059669", "#9333ea"];
+      var repLabel = {
+        none: "",
+        daily: es ? "cada día" : "daily",
+        weekly: es ? "cada semana" : "weekly"
+      };
+      var byday = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"];
+      function dowOf(d) { return (new Date(y, m, d).getDay() + 6) % 7; }
+      function allOn(d) {
+        var out = eventsOn(d).map(function (e) { return { c: e.c, h: e.h, t: e.t, r: e.r }; });
+        mine.forEach(function (e) {
+          var hit = e.d === d || (e.rep === "daily" && d > e.d) || (e.rep === "weekly" && d > e.d && dowOf(d) === dowOf(e.d));
+          if (hit) out.push({ c: e.c, h: e.h, t: e.t, r: repLabel[e.rep], id: e.id });
+        });
+        return out.sort(function (a, b) { return a.h < b.h ? -1 : a.h > b.h ? 1 : 0; });
+      }
+      el.innerHTML =
+        '<div class="demo-bar"><span>' + esc(monthName.charAt(0).toUpperCase() + monthName.slice(1)) + '</span><span class="state s-info sp">.ics → iPhone</span></div>' +
+        '<div class="demo-body">' +
+          '<div class="toast" id="cToast"><div class="grow"><strong>' + (es ? "Aviso" : "Reminder") + "</strong> · " + (es ? "Entrega de práctica en 10 min" : "Assignment due in 10 min") + "</div>" +
+            '<button type="button" class="btn" data-t="snooze">' + (es ? "Posponer" : "Snooze") + '</button><button type="button" class="btn" data-t="close">' + (es ? "Descartar" : "Dismiss") + "</button></div>" +
+          '<div class="cal-grid" id="cGrid"></div>' +
+          '<form class="cal-form" id="cForm">' +
+            '<p class="cal-form-title" id="cFormTitle"></p>' +
+            '<input class="field grow" id="cTitle" maxlength="60" autocomplete="off" required placeholder="' + (es ? "Nombre del evento" : "Event name") + '" aria-label="' + (es ? "Nombre del evento" : "Event name") + '"/>' +
+            '<input class="field" id="cTime" type="time" value="09:00" required aria-label="' + (es ? "Hora" : "Time") + '"/>' +
+            '<select class="field" id="cRep" aria-label="' + (es ? "Repetición" : "Repeat") + '">' +
+              '<option value="none">' + (es ? "No se repite" : "Does not repeat") + "</option>" +
+              '<option value="daily">' + (es ? "Cada día" : "Every day") + "</option>" +
+              '<option value="weekly">' + (es ? "Cada semana" : "Every week") + "</option>" +
+            "</select>" +
+            '<button class="btn primary" type="submit">' + (es ? "Añadir" : "Add") + "</button>" +
+          "</form>" +
+          '<div class="cal-list" id="cList" aria-live="polite"></div>' +
+          '<div class="cal-ics mono" id="cIcs" hidden></div>' +
+        "</div>" +
+        '<div class="demo-note">' + (es ? "Recreación interactiva. Elige un día, añade un evento (puede repetirse) y mira la línea que se enviaría al iPhone en el feed .ics." : "Interactive recreation. Pick a day, add an event (it can repeat) and see the line that would go to the iPhone in the .ics feed.") + "</div>";
+      var list = el.querySelector("#cList"), gridEl = el.querySelector("#cGrid"), icsEl = el.querySelector("#cIcs");
+      function drawGrid() {
+        var g = dows.map(function (d) { return '<div class="dow">' + d + "</div>"; }).join("");
+        for (var i = 0; i < startDow; i++) g += '<div class="cal-day out"></div>';
+        for (var d = 1; d <= days; d++) {
+          var ev = allOn(d);
+          g += '<button type="button" class="cal-day' + (d === today ? " today" : "") + '" data-d="' + d + '" aria-pressed="' + (d === sel) + '" aria-label="' + d + " · " + ev.length + (es ? " eventos" : " events") + '">' + d +
+            '<span class="cal-dots">' + ev.slice(0, 4).map(function (e) { return '<span style="background:' + e.c + '"></span>'; }).join("") + "</span></button>";
+        }
+        gridEl.innerHTML = g;
+        gridEl.querySelectorAll(".cal-day[data-d]").forEach(function (b) { b.addEventListener("click", function () { show(+b.dataset.d); }); });
+      }
+      function show(d) {
+        sel = d;
+        gridEl.querySelectorAll(".cal-day[data-d]").forEach(function (b) { b.setAttribute("aria-pressed", String(+b.dataset.d === d)); });
+        el.querySelector("#cFormTitle").textContent = (es ? "Nuevo evento el día " : "New event on day ") + d;
+        var ev = allOn(d);
+        if (!ev.length) { list.innerHTML = '<div class="cal-item muted">' + d + " · " + (es ? "Sin eventos" : "No events") + "</div>"; return; }
+        list.innerHTML = ev.map(function (e) {
+          return '<div class="cal-item"><span class="cdot" style="background:' + e.c + '"></span><span class="grow">' + esc(e.h) + " · " + esc(e.t) + (e.r ? ' <span class="muted">(' + esc(e.r) + ")</span>" : "") + "</span>" +
+            (e.id ? '<button type="button" class="cal-del" data-id="' + e.id + '" aria-label="' + (es ? "Borrar evento" : "Delete event") + '">✕</button>' : "") + "</div>";
+        }).join("");
+        list.querySelectorAll(".cal-del").forEach(function (b) {
+          b.addEventListener("click", function () {
+            mine = mine.filter(function (e) { return e.id !== +b.dataset.id; });
+            icsEl.hidden = true;
+            drawGrid(); show(sel);
+          });
+        });
+      }
+      el.querySelector("#cForm").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var title = el.querySelector("#cTitle").value.trim();
+        var time = el.querySelector("#cTime").value || "09:00";
+        var rep = el.querySelector("#cRep").value;
+        if (!title) return;
+        var e = { id: nextId++, d: sel, h: time, t: title, rep: rep, c: palette[(nextId - 2) % palette.length] };
+        mine.push(e);
+        el.querySelector("#cTitle").value = "";
+        var dt = String(y) + ("0" + (m + 1)).slice(-2) + ("0" + sel).slice(-2) + "T" + time.replace(":", "") + "00";
+        var rule = rep === "daily" ? " · RRULE:FREQ=DAILY" : rep === "weekly" ? " · RRULE:FREQ=WEEKLY;BYDAY=" + byday[dowOf(sel)] : "";
+        icsEl.textContent = "DTSTART:" + dt + rule + " · SUMMARY:" + title;
+        icsEl.hidden = false;
+        drawGrid(); show(sel);
+      });
+      drawGrid();
+      var toast = el.querySelector("#cToast");
+      toast.querySelectorAll("button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          if (b.dataset.t === "snooze") {
+            toast.querySelector(".grow").innerHTML = "<strong>" + (es ? "Pospuesto" : "Snoozed") + "</strong> · " + (es ? "aviso otra vez en 5 min" : "reminding again in 5 min");
+            b.remove();
+          } else { toast.remove(); }
+        });
+      });
+      show(today);
+    },
+
+    wasa: function (el) {
+      var es = lang === "es";
+      var nextMsg = 100;
+      var convs = [
+        { id: 1, name: "Marco", msgs: [{ id: 97, me: false, t: "Ciao! Hai finito il progetto?" }, { id: 98, me: true, t: es ? "¡Casi! Me falta Docker" : "Almost! Just Docker left" }] },
+        { id: 2, name: es ? "Grupo WASA" : "WASA group", msgs: [{ id: 99, me: false, t: es ? "La entrega es el viernes" : "Deadline is Friday" }] }
+      ];
+      var cur = 0;
+      el.innerHTML =
+        '<div class="demo-bar">WasaText<span class="state s-ok sp">' + (es ? "Sesión iniciada" : "Logged in") + "</span></div>" +
+        '<div class="demo-body"><div class="chat"><div class="convs" id="wConvs"></div>' +
+          '<div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div class="msgs" id="wMsgs" aria-live="polite"></div>' +
+          '<form class="compose" id="wForm"><input id="wIn" maxlength="120" autocomplete="off" placeholder="' + (es ? "Escribe un mensaje" : "Write a message") + '" aria-label="' + (es ? "Mensaje" : "Message") + '"/><button class="btn primary" type="submit">' + (es ? "Enviar" : "Send") + "</button></form></div></div>" +
+          '<div class="demo-log" id="wLog"></div></div>' +
+        '<div class="demo-note">' + (es ? "Recreación interactiva. Cambia de conversación, envía o borra mensajes y mira las llamadas a la API REST." : "Interactive recreation. Switch conversations, send or delete messages and watch the REST API calls.") + "</div>";
+      var cEl = el.querySelector("#wConvs"), mEl = el.querySelector("#wMsgs"), log = el.querySelector("#wLog");
+      function drawConvs() {
+        cEl.innerHTML = convs.map(function (c, i) { return '<button type="button" class="conv" aria-pressed="' + (i === cur) + '" aria-selected="' + (i === cur) + '" data-i="' + i + '">' + esc(c.name) + "</button>"; }).join("");
+        cEl.querySelectorAll(".conv").forEach(function (b) {
+          b.addEventListener("click", function () {
+            cur = +b.dataset.i; drawConvs(); drawMsgs();
+            logLine(log, "GET /conversations/" + convs[cur].id + "/messages → 200");
+          });
+        });
+      }
+      function drawMsgs() {
+        var c = convs[cur];
+        mEl.innerHTML = c.msgs.map(function (m, i) {
+          return '<div class="msg' + (m.me ? " me" : "") + '"><span>' + esc(m.t) + "</span>" + (m.me ? '<button type="button" data-i="' + i + '" aria-label="' + (es ? "Borrar mensaje" : "Delete message") + '">✕</button>' : "") + "</div>";
+        }).join("");
+        mEl.scrollTop = mEl.scrollHeight;
+        mEl.querySelectorAll("button").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var m = c.msgs.splice(+b.dataset.i, 1)[0];
+            logLine(log, "DELETE /messages/" + m.id + " → 204");
+            drawMsgs();
+          });
+        });
+      }
+      el.querySelector("#wForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var inp = el.querySelector("#wIn"), v = inp.value.trim();
+        if (!v) return;
+        var id = nextMsg++;
+        convs[cur].msgs.push({ id: id, me: true, t: v }); inp.value = "";
+        logLine(log, "POST /conversations/" + convs[cur].id + "/messages → 201 (id " + id + ")");
+        drawMsgs();
+      });
+      logLine(log, "POST /session → 201");
+      logLine(log, "GET /conversations → 200");
+      drawConvs(); drawMsgs();
+    }
+  };
+
+  /* ---------- Tech ---------- */
+  var PCOLOR = { gaz: "#14b8a6", fact: "#f59e0b", cal: "#a78bfa", wasa: "#60a5fa" };
+  var ACOLOR = { lang: "#3b82f6", front: "#14b8a6", back: "#8b5cf6", data: "#ec4899", ops: "#f97316" };
+  function pdot(id) { return '<span class="pdot" style="--c:' + PCOLOR[id] + '"></span>'; }
+
+  function renderTech() {
+    var box = document.getElementById("techGroups");
+    box.innerHTML = TECH_AREAS.map(function (a) {
+      var items = TECH.filter(function (x) { return x.area === a.id; });
+      return '<div class="tgroup" style="--c:' + ACOLOR[a.id] + '"><h3>' + esc(L(a)) + "</h3><ul>" +
+        items.map(function (x) {
+          return '<li class="trow"><span class="tile" style="--c:' + ACOLOR[a.id] + '" aria-hidden="true">' + esc(x.ab) + '</span><div class="tbody">' +
+            '<div class="tname">' + esc(x.name) + "</div><p>" + esc(x[lang]) + "</p>" +
+            '<div class="tused"><span class="lbl">' + t("tech.used") + "</span>" + x.p.map(function (p) {
+              return '<button type="button" class="plink" data-go="' + p + '">' + pdot(p) + esc(projName(p)) + "</button>";
+            }).join("") + "</div></div></li>";
+        }).join("") + "</ul></div>";
+    }).join("");
+    box.querySelectorAll(".plink").forEach(function (b) {
+      b.addEventListener("click", function () {
+        selectProject(b.dataset.go);
+        document.getElementById("proyectos").scrollIntoView();
+      });
+    });
+  }
+
+  /* ---------- Path ---------- */
+  function renderPath() {
+    document.getElementById("timeline").innerHTML = PATH.map(function (s) {
+      return '<li><span class="when">' + esc(L(s.when)) + "</span><h3>" + esc(L(s.t)) + "</h3><p>" + esc(L(s.d)) + "</p></li>";
+    }).join("");
+  }
+
+  /* ---------- Contact ---------- */
+  document.getElementById("copyBtn").addEventListener("click", function () {
+    var span = this.querySelector("span");
+    function done() { span.textContent = t("contact.copied"); setTimeout(function () { span.textContent = t("contact.copy"); }, 1600); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText("julitrebu81@gmail.com").then(done, function () { window.location.href = "mailto:julitrebu81@gmail.com"; });
+    } else {
+      window.location.href = "mailto:julitrebu81@gmail.com";
+    }
+  });
+
+  /* ---------- Boot ---------- */
+  function renderAll() {
+    applyStatic();
+    renderStack();
+    renderTabs();
+    renderProject();
+    renderTech();
+    renderPath();
+  }
+  renderAll();
+})();
+</script>
+</body>
+</html>
